@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuyUSA</title>
+</head>
+<body>
+    <div class="container">
+        <h1>BuyUSA</h1>
+        <p>Check if product is made in USA</p>
+        <input type="text" id="barcode" placeholder="Enter barcode number">
+        <button onclick="fetchProductData()">Check Product</button>
+        <div id="result" class="result" style="display: none;"></div>
+        <span class="about-link" onclick="openModal()">About This App</span>
+    </div>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <h2>About BuyUSA</h2>
+            <p>BuyUSA helps you identify whether a product is made in the USA. Enter a barcode to check.</p>
+            <button class="close" onclick="closeModal()">Close</button>
+        </div>
+    </div>
+
+</body>
+</html>
